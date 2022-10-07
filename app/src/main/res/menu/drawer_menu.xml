@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home">
+        </item>
+<!--        <item android:id="@+id/nav_drawer1"-->
+<!--            android:icon="@drawable/ic_baseline_smartphone_24"-->
+<!--            android:title="About Us">-->
+<!--        </item>-->
+
+        </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item android:id="@+id/nav_services"
+            android:icon="@drawable/ic_baseline_miscellaneous_services_24"
+            android:title="@string/services_we_provide">
+        </item>
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item android:id="@+id/nav_disclaimer"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/Disclaimer">
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item android:id="@+id/contactuss"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/contact_us">
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group6">
+        <item android:id="@+id/signout"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="@string/signout">
+        </item>
+    </group>
+</menu>

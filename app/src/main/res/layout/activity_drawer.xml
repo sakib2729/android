@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    android:minWidth="19dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFFFFF"
+                app:subtitleTextColor="#0A0A0A"
+                app:titleTextColor="#111111" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:text="Welcome"
+                android:textColor="#D4AF37"
+                android:textSize="40dp" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                app:srcCompat="@drawable/welcome_3"
+                android:layout_marginLeft="120dp"
+                android:layout_marginVertical="2dp"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:gravity="fill_vertical"
+                android:paddingLeft="45dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="6dp"
+                android:text="!With the consumer becoming better
+informed and equipped - there has been
+a surge in complaints, grievances and
+notices being issued by the consumer to
+the supplier, manufacturer, aggregator,
+distributor! Consumer Protections laws
+in India are becoming increasingly
+consumer centric, taking their grievances
+into strict consideration!
+Consumer dispute forums have a bias
+towards the consumer, owing to which
+it is necessary for companies to have
+prompt and efficient legal representation
+to avoid being harassed by fraudulent
+complaints and complainants. "
+                android:textColor="#5b3e31"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="1dp"
+                android:gravity="fill_vertical"
+                android:paddingLeft="45dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="50dp"
+                android:text="Consumer dispute forums have a bias
+towards the consumer, owing to which
+it is necessary for companies to have
+prompt and efficient legal representation
+to avoid being harassed by fraudulent
+complaints and complainants.
+"
+                android:textColor="#5b3e31"
+                android:textSize="20dp" />
+
+            <!--    Your code here -->
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer_menu">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

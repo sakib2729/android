@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".disclaimer"
+    android:fitsSystemWindows="true">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F7FFFFFF"
+                    app:subtitleTextColor="#0A0A0A"
+                    app:titleTextColor="#111111" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Disclaimer"
+                    android:textColor="#D4AF37"
+                    android:textSize="40dp" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="1dp"
+                    android:text="The material on our App has been prepared and
+published for general information only. There is
+no effort or intention to solicit new clients or new
+engagements from existing clients by way of this
+mobile application."
+                    android:textColor="#5b3e31"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1px"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="40dp"
+                    android:paddingBottom="1dp"
+                    android:text="The information contained in this app is provided
+by Free Legal Help as general information which
+may or may not reflect the most current legal
+developments. This information is not intended
+to constitute, and should not be considered, legal
+reference or legal advice. Free Legal Help does not
+sponsor reliance upon, or accept responsibility
+for the information Free Legal Help provides or
+for the way in which this information should be
+used, or any actions taken in consequence of the
+use of such information. Moreover, Free Legal
+Help doesn't give any guarantees, undertaking or
+warranties concerning the accuracy, completeness
+or up-to-date nature of the information provided
+on this application."
+                    android:textColor="#5b3e31"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1px"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="40dp"
+                    android:text="Communication of information by or through this
+app and your receipt or use of such information
+is not intended to create an attorney-client
+relationship with Free Legal Help or any of the
+Firm's attorneys.The creation of the attorney-client relationship
+would require direct, personal contact between you and our firm through one or
+more attomeys and would also require an explicit agreement in the form of an
+engagement letter by the firm that confirms that an attorney client relationship
+is established and the terms of that relationship. You should not act or rely upon
+information contained or given to you through this mobile application without
+specifically seeking professional legal advice."
+                    android:textColor="#5b3e31"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="User Acknowledgement :"
+                    android:textColor="#5b3e31"
+                    android:gravity="fill_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="40dp"
+                    android:textSize="22dp" />
+                <!--    Your code here -->
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1px"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="40dp"
+                    android:text="By proceeding further and clicking on the 'Agree' button herein below, I acknowledge
+that I of my own accord wish to know more about Free Legal Help for my own
+information and use, I further acknowledge that there has been no solicitation,
+invitation or inducement of any sort whatsoever from Free Legal Help or any of
+its members to create an Attorney-Client relationship through this app. I further
+acknowledge having read and understood the Disclaimer mentioned above,"
+                    android:textColor="#5b3e31"
+                    android:textSize="20dp"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/agree"
+                    android:textColorHint="#5b3e31"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#D4AF37"
+                    android:hint="Agree"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/disagree"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#5b3e31"
+                    android:background="#D4AF37"
+                    android:hint="Disagree"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/drawer_menu">
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>

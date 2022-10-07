@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#CFB284"
+    android:padding="25dp">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/legalhelp"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="One Stop destination-->
+    <!--         for all your legal problems" />-->
+
+    <TextView
+        android:id="@+id/legalhelp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Free Legal Help"
+        android:textColor="#00008B"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="219dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/legalhelp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:paddingLeft="3dp"
+        android:text="One Stop destination for all your legal problems"
+        android:textColor="#00008B" />
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="140dp"
+    app:srcCompat="@drawable/tarazu2"
+    android:layout_marginLeft="60dp"
+    android:layout_marginTop="10dp"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_above="@+id/legalhelp"-->
+
+
+
+
+</RelativeLayout>
